@@ -78,16 +78,16 @@ $db['default'] = array(
 	/**
 	 * 로컬서버
 	 */
-	'hostname' => 'mysql57',
-	'username' => 'root',
-	'password' => 'example',
+//	'hostname' => 'mysql57',
+//	'username' => 'root',
+//	'password' => 'example',
 
 	/**
 	 * 개발서버
 	 */
-//	'hostname' => 'localhost',
-//	'username' => '',
-//	'password' => '',
+	'hostname' => 'localhost',
+	'username' => 'seablue_lkj',
+	'password' => 'Java!004',
 
 //	'database' => '',
 //	'dbdriver' => 'mysqli',
@@ -98,7 +98,7 @@ $db['default'] = array(
 //	'cachedir' => '',
 //	'char_set' => 'utf8',
 //	'dbcollat' => 'utf8_general_ci',
-	'database' => 'comeinwash',
+	'database' => 'seablue_php01',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
