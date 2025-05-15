@@ -94,18 +94,19 @@ class CW_Controller extends CI_Controller
             $this->output->set_content_type('application/json');
             $this->output->set_output(json_encode(array(
                 'result' => false,
-                'message' => '권한이 없습니다.'
+                'message' => '권한이 없습니다.1'
             ), JSON_UNESCAPED_UNICODE))->_display();
             exit();
         } else {
             $authCode = str_replace('Bearer ', '', $header['Authorization']);
             $hashed = hash('sha512', $authCode);
+			echo "$hashed ::: ". $hashed ."\n";
             if ($hashed != '0a4cab6f323c35e1f00ecc00685aabb3cedec3326f712a63b8f47bb82e211251c34f9b5d58570666f9c85f95b40aca6b5c2696a26ea345a0f08998274faad234') {
                 $this->output->set_status_header('401');
                 $this->output->set_content_type('application/json');
                 $this->output->set_output(json_encode(array(
                     'result' => false,
-                    'message' => '권한이 없습니다.',
+                    'message' => '권한이 없습니다.2',
                     'authcode' => $hashed
                 ), JSON_UNESCAPED_UNICODE))->_display();
                 exit();
