@@ -69,3 +69,24 @@ Acknowledgement
 
 The CodeIgniter team would like to thank EllisLab, all the
 contributors to the CodeIgniter project and you, the CodeIgniter user.
+
+
+***************
+추가 설정 - 2025.05.14
+***************
+
+1. deprecate 이슈 #[\AllowDynamicProperties] 클래스에 설정
+2. database 설정
+3. config 설정 : $config['base_url'] = 'https://localhost:1024';
+4. core 추가 : CW_Controller, CW_Model, CW_Exception 
+5. helpers 추가 
+6. vendor 추가 
+7. autoload 설정 : helper, model 
+
+
+***************
+개발 
+***************
+
+1. code api 개발 controller, model [2025.05.14]
+
