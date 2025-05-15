@@ -122,7 +122,7 @@ class CW_Controller extends CI_Controller
             $this->output->set_content_type('application/json');
             $this->output->set_output(json_encode(array(
                 'result' => false,
-                'message' => '권한이 없습니다.'
+                'message' => '권한이 없습니다.3'
             ), JSON_UNESCAPED_UNICODE))->_display();
             exit();
         } else {
@@ -134,7 +134,7 @@ class CW_Controller extends CI_Controller
                 $this->output->set_content_type('application/json');
                 $this->output->set_output(json_encode(array(
                     'result' => false,
-                    'message' => '권한이 없습니다.',
+                    'message' => '권한이 없습니다.4',
                     'authcode' => $hashed
                 ), JSON_UNESCAPED_UNICODE))->_display();
                 exit();
